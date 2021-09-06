@@ -13,5 +13,28 @@
         <div class="ilbuni b">b</div>
         <div class="ilbuni c">c</div>
     </div>
+
+
+    <script>
+
+    (function () {        
+        const stage = document.querySelector(".stage");
+
+        stage.addEventListener("click",ch);
+        function ch(e) {
+            console.log(e)
+
+            if (e.target.classList.contains("ilbuni")) {
+                stage.removeChild(e.target);
+                
+            }
+            
+        }
+
+
+    }
+
+    )();
+    </script>
 </body>
 </html>
